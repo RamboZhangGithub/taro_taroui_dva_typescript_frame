@@ -1,0 +1,16 @@
+.emptyMap {
+  @include fj(center);
+  align-items: center;
+  flex-direction: column;
+
+  .emptyLogo {
+    width: 60%;
+  }
+
+  .emptyStatus {
+    line-height: 60px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #b2b4b5;
+  }
+}
