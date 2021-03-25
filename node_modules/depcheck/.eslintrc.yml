@@ -1,5 +1,0 @@
-parser: babel-eslint
-extends: airbnb
-rules:
-  implicit-arrow-linebreak: off
-  import/no-dynamic-require: off
