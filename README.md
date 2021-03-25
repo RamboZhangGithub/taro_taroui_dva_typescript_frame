@@ -1,15 +1,3 @@
-# 项目说明
-
-```
-
-# 项目名称
-口语打卡
-
-#项目目标平台
-微信小程序
-
-```
-
 # 脚手架
 
 命令行快速生成模板页面
@@ -20,11 +8,11 @@ npm icon 'iconfont下载链接后缀'
 
 node >= 12.0.0
 
-Taro >= v3.0.9
+Taro >= v3.1.4
 
 # 技术栈
 
-React + Taro + Dva + Scss + typeScript
+React + Taro +TaroUi + Dva + Scss + typeScript
 
 使用eslint+prettier格式化
 
@@ -40,25 +28,25 @@ cd taro-dva-ts
 yarn
 
 # 微信小程序
-npm run dev:weapp
+yarn dev:weapp
 
 # 支付宝小程序
-npm run dev:alipay
+yarn dev:alipay
 
 # 百度小程序
-npm run dev:swan
+yarn dev:swan
 
 # 字节跳动小程序
-npm run dev:tt
+yarn dev:tt
 
 # QQ小程序
-npm run dev:qq
+yarn dev:qq
 
 # H5
-npm run dev:h5
+yarn dev:h5
 
 # React Native
-npm run dev:rn
+yarn dev:rn
 
 # pages模版快速生成
 npm run tpl `文件名`
@@ -69,20 +57,23 @@ npm run tpl `文件名`
 
 目录结构
 
-    ├── .temp                  // H5编译结果目录
-    ├── .rn_temp               // RN编译结果目录
     ├── dist                   // 小程序编译结果目录
+    │   ├── weapp                 // 微信小程序
+    │   ├── alipay                // 支付宝小程序
+    │   ├── qq                    // QQ小程序
+    │   └── xxxx                  // 根据编译名称动态生成相应端名称
     ├── config                 // Taro配置目录
     │   ├── dev.ts                 // 开发时配置
     │   ├── index.ts               // 默认配置
     │   └── prod.ts                // 打包时配置
     ├── src                    // 源码目录
+    │   ├── @types                 // 类型声名目录
     │   ├── components             // 组件
     │   ├── config                 // 项目开发配置
     │   ├── models                 // redux models
     │   ├── pages                  // 页面文件目录
-    │   │   └── account
-    │   │       ├── index.ts           // 页面逻辑
+    │   │   └── index
+    │   │       ├── index.tsx          // 页面逻辑
     │   │       ├── index.scss         // 页面样式
     │   │       ├── index.config.ts    // 页面配置
     │   ├── service            // 页面api等服务
