@@ -99,7 +99,7 @@ npm run tpl `文件名`
 
 ### 小程序开发文档
 
-> https://mp.weixin.qq.com/debug/wxadoc/dev/
+> https://developers.weixin.qq.com/miniprogram/dev/framework/
 
 # License
 
