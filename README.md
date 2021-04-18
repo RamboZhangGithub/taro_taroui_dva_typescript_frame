@@ -8,7 +8,7 @@ npm icon 'iconfont下载链接后缀'
 
 node >= 12.0.0
 
-Taro >= v3.1.4
+Taro >= v3.2.1
 
 # 技术栈
 
